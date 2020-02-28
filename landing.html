@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Latitude -Max Tempperature Plot</title>
+        <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+     </head>
+    <body>
+                <div class="container-fluid">    
+                        <div class="row">
+                        <div class="col-md-12"></div>
+                        <p></p>
+                        </div>
+                </div>
+
+    <div class="container-fluid">    
+        <div class="row">
+            <div class="col-md-1"></div>
+             <div class="col-md-2">
+                 <div class="header">
+                 
+                    <h1>Latitude</h1>
+                 </div> 
+             </div> 
+            
+             <div class="col-md-2"></div>
+             <div class="col-md-3"></div>
+
+            <div class="col-md-3">
+                <nav class="navbar  navbar-expand-lg  navbar-light bg-light">
+                 <!-- <a class="navbar-brand" href="#"></a> -->
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <!-- <span class="navbar-toggler-icon"></span> -->
+                 </button>
+    
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                    <ul class="navbar-nav" mr-auto>
+                    <li class="nav-item active">
+                        <a class="nav-link"target="_blank" href="comparison.html"><h5>Comparison</h5><span class="sr-only">(current)</span></a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="data.html"><h5>Data</h5></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5>Plots</h5></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" target="_blank" href="temperature.html">Max Temperature</a>
+                                <a class="dropdown-item" target="_blank" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" target="_blank" href="wind_speed.html">Wind Speed</a>
+                                <a class="dropdown-item" target="_blank" href="cloudiness.html">Cloudiness</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+    </div>
+    
+    <div class="container-fluid">
+        <div class='jumbotron'>
+            <article class="row single-post mt-5 no-gutters">
+                <div class="col-lg-7">
+                    <div class="box">
+                        <div class="header_1">
+                            <h1>Summary: Latitude vs. X</h1>
+                        </div>
+                        
+                         <div class="image-wrapper float-left pr-3">
+                            <img src="\Users\fkari\Web-Design-Challenge\visualizations\temperature.png"  alt="">
+                            </div>
+                                <div class="single-post-content-wrapper p-3">
+                            <div class="parag">
+                                Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?" Now, we know what you may be thinking: _"Duh. It gets hotter..." But, if pressed, how would you **prove** it?
+                            <br><br>
+                            In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities. Your first objective is to build a series of scatter plots to showcase the following relationships:
+                            <br>    
+                            * Temperature (F) vs. Latitude
+                            <br>
+                            * Humidity (%) vs. Latitude
+                            <br>
+                            * Cloudiness (%) vs. Latitude
+                            <br>
+                            * Wind Speed (mph) vs. Latitude
+                            <br>
+                             After each plot add a sentence or too explaining what the code is and analyzing.
+                            </div>
+                                </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                    <div class="box">
+                        <div class="header_1">
+                            <h1>Visualizations</h1>
+                        </div>
+                             <img src="\Users\fkari\Web-Design-Challenge\visualizations\temperature.png" width="45%" alt="Temperature">
+                            <img src="\Users\fkari\Web-Design-Challenge\visualizations\humidity.png" width="45%" alt="Humidity">
+                            <img src="\Users\fkari\Web-Design-Challenge\visualizations\wind_speed.png" width="45%" alt="Wind Speed">
+                            <img src="\Users\fkari\Web-Design-Challenge\visualizations\cloudiness.png" width="45%" alt="Cloudiness">
+                        
+                        <!-- <div class="single-post-content-wrapper p-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
+                        </div> -->
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+     </body>
+</html>
